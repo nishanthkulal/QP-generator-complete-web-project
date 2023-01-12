@@ -16,13 +16,13 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!==true){
 <?php
 
 
-error_reporting(0);
+// error_reporting(0);
 
-   $sql = "SELECT * FROM `type`";
-    $all_types = mysqli_query($db,$sql);
+//    $sql = "SELECT * FROM `type`";
+//     $all_types = mysqli_query($db,$sql);
 
-          $sql = "SELECT * FROM `meterials`";
-    $all_meterials = mysqli_query($db,$sql);
+//           $sql = "SELECT * FROM `meterials`";
+//     $all_meterials = mysqli_query($db,$sql);
 
 
     ?>
@@ -69,7 +69,7 @@ error_reporting(0);
 	<h2>Add Questions</h2></br>
 <div class="table-responsive">
 	  
-                <input type="hidden" name="id" value="<?php echo($_SESSION["id"]); ?>">
+                <input type="hidden" name="id" value="<?php echo($_SESSION['id']); ?>">
 				<input type="text" name="papername" placeholder="Qpaper" class="form-control name_list" width="50%"/>
 				<br>
 
